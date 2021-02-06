@@ -58,18 +58,20 @@ public class EmployeeView {
                 ec.AskUserEmployeeDetails(numberofemployee);
                 break;
             case 2:
-                ec.listEmployee();
+//                ec.listEmployee();
                 System.out.println("To Delete Employee Pls enter Employee key from the above available employee");
                 int employeeKey = sc.nextInt();
                 ec.deleteEmployee(employeeKey);
+                break;
             case 3:
                 System.out.println("Please Enter the Key they you have to update from above Employee list");
-
                 int key=sc.nextInt();
                 ec.updateEmployee(key);
+                break;
             case 4:
                 System.out.println("List of Employee Created");
                 ec.listEmployee();
+                break;
         }
 
 

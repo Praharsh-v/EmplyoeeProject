@@ -53,8 +53,13 @@ public class EmployeeController
     public void deleteEmployee(int employeeKey)
     {
         create.remove(employeeKey);
+        System.out.println("Remaining Employee's = ");
+        for (Map.Entry<Integer, Employee> entry : create.entrySet()) {
+            System.out.println(entry.getKey() + " " + entry.getValue());
+        }
     }
     public void updateEmployee(int key){
+        System.out.println("Please Enter Name, Age Salary to update");
         employee=new Employee(sc.next(),sc.nextInt(),sc.nextInt());
         create.put(key, employee);
         System.out.println("Updated Employee's = ");
