@@ -39,7 +39,7 @@ public class EmployeeView {
     }
 
     public static void projectMenu() {
-        System.out.println("welcome to employee System");
+        System.out.println("welcome to Project System");
         System.out.println("1.Create Project");
         System.out.println("2.Assign Project");
         System.out.println("3.Delete Project");

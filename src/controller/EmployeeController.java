@@ -57,6 +57,7 @@ public class EmployeeController
         for (Map.Entry<Integer, Employee> entry : create.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
+       EmployeeView.menuProvider();
     }
     public void updateEmployee(int key){
         System.out.println("Please Enter Name, Age Salary to update");
@@ -66,7 +67,7 @@ public class EmployeeController
         for (Map.Entry<Integer, Employee> entry : create.entrySet()) {
             System.out.println(entry.getKey() + " " + entry.getValue());
         }
-
+        EmployeeView.menuProvider();
     }
 
 }
