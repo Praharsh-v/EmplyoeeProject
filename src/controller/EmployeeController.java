@@ -27,6 +27,7 @@ public class EmployeeController
             System.out.println("Enter employee Salary");
             int salary=sc.nextInt();
             //employee.setSalary(sc.nextInt());
+//            employee=new Employee(employee.getName(), employee.getAge(),employee.getSalary())
             employee=new Employee(name,age,salary);
             createEmployee(i,employee);
             System.out.println(employee.getName());
@@ -54,7 +55,7 @@ public class EmployeeController
         create.remove(employeeKey);
     }
     public void updateEmployee(int key){
-
+        employee=new Employee(sc.next(),sc.nextInt(),sc.nextInt());
         create.put(key, employee);
         System.out.println("Updated Employee's = ");
         for (Map.Entry<Integer, Employee> entry : create.entrySet()) {
