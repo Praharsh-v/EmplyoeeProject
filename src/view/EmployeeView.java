@@ -75,7 +75,7 @@ public class EmployeeView {
                     employeeService.updateEmployee(key);
                     break;
                 case 4:
-                    employeeService.displayEmployee(storeEmployee.getCreate());
+                    employeeService.listE();
                     break;
             }
 

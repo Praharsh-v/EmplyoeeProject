@@ -3,7 +3,6 @@ package repo;
 import Model.Employee;
 import Model.EmployeeService;
 
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 public class StoreEmployee
@@ -19,9 +18,12 @@ public class StoreEmployee
         return create;
     }
 
-    public Map<Integer,Employee> display(){
+    public void display(){
         EmployeeService ed=new EmployeeService();
-        return ed.displayEmployee(getCreate());
+        ed.displayEmployee(getCreate());
+    }
+    public Map<Integer, Employee> listEmployee(){
+        return create;
     }
 
 
