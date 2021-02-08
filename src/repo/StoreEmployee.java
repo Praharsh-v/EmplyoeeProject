@@ -1,11 +1,11 @@
 package repo;
 
 import Model.Employee;
+import Model.EmployeeService;
 
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-
 public class StoreEmployee
 {
     Map<Integer, Employee> create=new HashMap<>();
@@ -19,10 +19,12 @@ public class StoreEmployee
         return create;
     }
 
-    public void displayEmployee(){
-        for (Map.Entry<Integer, Employee> entry : this.create.entrySet()) {
-            System.out.println(entry.getKey() + " " + entry.getValue());
-        }
+    public Map<Integer,Employee> display(){
+        EmployeeService ed=new EmployeeService();
+        return ed.displayEmployee(getCreate());
     }
-}
+
+
+    }
+
 

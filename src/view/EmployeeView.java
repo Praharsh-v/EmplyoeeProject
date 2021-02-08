@@ -11,6 +11,7 @@ public class EmployeeView {
     private static final EmployeeController ec = new EmployeeController();
     private static final Employee employee = new Employee();
     private static EmployeeService employeeService = new EmployeeService();
+    private static StoreEmployee storeEmployee=new StoreEmployee();
 
     private static final Scanner sc = new Scanner(System.in);
 
@@ -74,8 +75,7 @@ public class EmployeeView {
                     employeeService.updateEmployee(key);
                     break;
                 case 4:
-                    StoreEmployee Store=new StoreEmployee();
-                    Store.displayEmployee();
+                    employeeService.displayEmployee(storeEmployee.getCreate());
                     break;
             }
 

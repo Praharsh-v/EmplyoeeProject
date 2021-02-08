@@ -37,7 +37,6 @@ public class EmployeeController
 
         }
 //        EmployeeView.menuProvider();
-        store.displayEmployee();
         employeeService.listEmployee();
 
     }
